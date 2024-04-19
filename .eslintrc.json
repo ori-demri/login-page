@@ -50,7 +50,6 @@
     }
   },
   "rules": {
-    "@stylistic/js/indent": ["error", "windows"],
     "react/jsx-filename-extension": [
       "error",
       {
