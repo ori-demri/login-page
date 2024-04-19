@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 
-function LoginPage() {
-  // State to manage input values
+function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  // Function to handle form submission
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    // Here you can add logic to handle login authentication
     console.log('Username:', username);
     console.log('Password:', password);
   };
@@ -41,4 +38,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default Login;
