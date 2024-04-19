@@ -50,6 +50,7 @@
     }
   },
   "rules": {
+    "linebreak-style": 0,
     "react/jsx-filename-extension": [
       "error",
       {
@@ -57,10 +58,6 @@
           ".tsx"
         ]
       }
-    ],
-    "linebreak-style": [
-      "error",
-      "unix"
     ],
     "no-console": "off",
     "no-use-before-define": "off",
