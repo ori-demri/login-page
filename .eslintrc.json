@@ -50,7 +50,7 @@
     }
   },
   "rules": {
-    "linebreak-style": 0,
+    "@stylistic/js/indent": ["error", "windows"],
     "react/jsx-filename-extension": [
       "error",
       {
