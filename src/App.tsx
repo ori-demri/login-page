@@ -1,10 +1,10 @@
 import React from 'react';
-import LoginPage from './components/loginPage.tsx';
+import Login from './pages/login/login.tsx';
 import './App.css';
 
 function App(): React.JSX.Element {
   return (
-    <LoginPage />
+    <Login />
   );
 }
 
