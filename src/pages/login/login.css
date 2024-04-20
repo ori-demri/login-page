@@ -1,0 +1,62 @@
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom left, #fa93be, #eb8934);
+}
+.form-container{
+    height: 30vh;
+    width: 45vh;
+    border-radius: 0.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2vh;
+}
+.person-img {
+    height: 10vh;
+    width: 10vh;
+}
+.login-btn {
+    background-image: linear-gradient(to right, #eb8934 0%, #f076a9 51%, #eb8934 100%);
+    color: white;
+    font-weight: bold;
+    width: 20vw;
+    height: 5.5vh;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 0.5vh;
+    font-size: 2.5vh;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.login-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    cursor: pointer;
+    transform: scale(1.07);
+}
+input{
+    height: 5.8vh;
+    width: 22vw;
+    background: rgb(231, 228, 228);
+    font-size: 2.5vh;
+    border-radius: 0.5vh;
+    border: none;
+    text-indent: 0.6vw;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vh;
+}
+span{
+    color: white;
+}
