@@ -4,11 +4,11 @@ import styles from './register.module.css';
 import person from '../../assets/person.png';
 
 function Register() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-  const [passwordsMatch, setPasswordsMatch] = useState(true);
-  const [isConfirmPasswordFocused, setIsConfirmPasswordFocused] = useState(false);
+  const [username, setUsername] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [confirmPassword, setConfirmPassword] = useState<string>('');
+  const [passwordsMatch, setPasswordsMatch] = useState<boolean>(true);
+  const [isConfirmPasswordFocused, setIsConfirmPasswordFocused] = useState<boolean>(false);
   const navigate = useNavigate();
 
   const handleConfirmPasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
