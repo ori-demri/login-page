@@ -1,0 +1,108 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eb8934;
+  background-image: linear-gradient(to bottom left, #fa93be, #eb8934);
+}
+
+.formContainer {
+  height: 40vh;
+  width: 25vw;
+  border-radius: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2vh;
+}
+
+.personImg {
+  height: 10vh;
+  width: 10vh;
+}
+
+.registerBtn {
+  background-image: linear-gradient(to right, #eb8934 0%, #f076a9 51%, #eb8934 100%);
+  color: white;
+  font-weight: bold;
+  width: 20vw;
+  height: 5.5vh;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 0.5vh;
+  font-size: 2.5vh;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.registerBtn:hover {
+  background-position: right center;
+  cursor: pointer;
+  transform: scale(1.07);
+}
+
+input {
+  height: 5.8vh;
+  width: 22vw;
+  background: rgb(231, 228, 228);
+  font-size: 2.5vh;
+  border-radius: 0.5vh;
+  border: none;
+  text-indent: 0.6vw;
+  border: 2px solid  rgb(231, 228, 228);
+}
+input:focus{
+  outline: none;
+  outline-offset: 0;
+  border-color:  rgb(231, 228, 228);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7vh;
+}
+
+span {
+  color: white;
+}
+
+.loginText {
+  color: #eb8934;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+.loginText:hover {
+  text-decoration: underline;
+}
+.matched {
+  border: 2px solid green;
+}
+
+.notMatched {
+  border-color: 2px solid red;
+}
+.matched:focus{
+  outline: none;
+  outline-offset: 0;
+  border-color: green;
+}
+.notMatched:focus {
+  outline: none;
+  outline-offset: 0;
+  border-color: red;
+}

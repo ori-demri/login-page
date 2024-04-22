@@ -7,7 +7,7 @@
     background-color: #eb8934; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom left, #fa93be, #eb8934);
 }
-.form-container{
+.formContainer{
     height: 30vh;
     width: 25vw;
     border-radius: 0.5vh;
@@ -19,11 +19,11 @@
     background-color: white;
     padding: 2vh;
 }
-.person-img {
+.personImg {
     height: 10vh;
     width: 10vh;
 }
-.login-btn {
+.loginBtn {
     background-image: linear-gradient(to right, #eb8934 0%, #f076a9 51%, #eb8934 100%);
     color: white;
     font-weight: bold;
@@ -38,7 +38,7 @@
     border: none;
     transition: all 0.3s ease-in-out;
 }
-.login-btn:hover {
+.loginBtn:hover {
     background-position: right center; /* change the direction of the change here */
     cursor: pointer;
     transform: scale(1.07);
@@ -60,3 +60,35 @@ input{
 span{
     color: white;
 }
+
+input:focus {
+    outline: none;
+    border-color: #eb8934;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vh;
+}
+
+span {
+    color: white;
+    font-weight: bold;
+}
+
+.registerText {
+    color: #eb8934;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;
+  }
+  
+  .registerText:hover {
+    text-decoration: underline;
+  }
