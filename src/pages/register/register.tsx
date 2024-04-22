@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './login.css';
+import './register.css';
 import person from '../../assets/person.png';
 
-function Login() {
+function Register() {
   const [username, setUsername] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const navigate = useNavigate();
@@ -56,4 +56,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;
