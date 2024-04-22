@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './login.css';
+import styles from './login.module.css';
 import person from '../../assets/person.png';
 
 function Login() {
@@ -19,15 +19,15 @@ function Login() {
   };
 
   return (
-    <div className="background">
-      <img className="person-img" src={person} alt="Person" />
+    <div className={styles.background}>
+      <img className={styles.personImg} src={person} alt="Person" />
       <h1>
         <span style={{ fontWeight: 'bold' }}>User</span>
         {' '}
         <span style={{ fontWeight: 'normal' }}>Login</span>
       </h1>
-      <form className="form-container" onSubmit={handleSubmit}>
-        <div className="inputs">
+      <form className={styles.formContainer} onSubmit={handleSubmit}>
+        <div className={styles.inputs}>
           <div>
             <input
               placeholder="Username"
@@ -49,8 +49,8 @@ function Login() {
             />
           </div>
         </div>
-        <button className="login-btn" type="submit">Log In</button>
-        <button className="register-text" type="button" onClick={handleRegisterClick}>Not registered? Register now!</button>
+        <button className={styles.loginBtn} type="submit">Log In</button>
+        <button className={styles.registerText} type="button" onClick={handleRegisterClick}>Not registered? Register now!</button>
       </form>
     </div>
   );
