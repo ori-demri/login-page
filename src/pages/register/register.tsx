@@ -7,14 +7,37 @@ function Register() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [passwordsMatch, setPasswordsMatch] = useState(true);
+  const [isConfirmPasswordFocused, setIsConfirmPasswordFocused] = useState(false);
   const navigate = useNavigate();
+
+  const handleConfirmPasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setConfirmPassword(event.target.value);
+    setPasswordsMatch(event.target.value === password);
+  };
+
+  const handleConfirmPasswordFocus = () => {
+    setIsConfirmPasswordFocused(true);
+  };
+
+  const handleConfirmPasswordBlur = () => {
+    setIsConfirmPasswordFocused(false);
+  };
+
+  const getInputClassName = () => {
+    if (isConfirmPasswordFocused && password) {
+      return passwordsMatch ? styles.matched : styles.notMatched;
+    }
+    return '';
+  };
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    console.log('Username:', username);
-    console.log('Password:', password);
-    console.log('Confirm Password:', confirmPassword);
-    // Handle registration logic here
+    if (passwordsMatch) {
+      console.log(`${username} registered with ${password} as password`);
+    } else {
+      console.log(`${password} and ${confirmPassword} are not the same!`);
+    }
   };
 
   const handleUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,10 +46,7 @@ function Register() {
 
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(event.target.value);
-  };
-
-  const handleConfirmPasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setConfirmPassword(event.target.value);
+    setPasswordsMatch(event.target.value === confirmPassword);
   };
 
   const handleLoginClick = () => {
@@ -65,11 +85,14 @@ function Register() {
           </div>
           <div>
             <input
+              className={getInputClassName()}
               placeholder="Confirm Password"
               type="password"
               id="confirmPassword"
               value={confirmPassword}
               onChange={handleConfirmPasswordChange}
+              onFocus={handleConfirmPasswordFocus}
+              onBlur={handleConfirmPasswordBlur}
               required
             />
           </div>

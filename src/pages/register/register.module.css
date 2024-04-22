@@ -56,6 +56,12 @@ input {
   border-radius: 0.5vh;
   border: none;
   text-indent: 0.6vw;
+  border: 2px solid  rgb(231, 228, 228);
+}
+input:focus{
+  outline: none;
+  outline-offset: 0;
+  border-color:  rgb(231, 228, 228);
 }
 
 .inputs {
@@ -82,4 +88,21 @@ span {
 
 .loginText:hover {
   text-decoration: underline;
+}
+.matched {
+  border: 2px solid green;
+}
+
+.notMatched {
+  border-color: 2px solid red;
+}
+.matched:focus{
+  outline: none;
+  outline-offset: 0;
+  border-color: green;
+}
+.notMatched:focus {
+  outline: none;
+  outline-offset: 0;
+  border-color: red;
 }
