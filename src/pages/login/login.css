@@ -4,12 +4,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: red; /* For browsers that do not support gradients */
+    background-color: #eb8934; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom left, #fa93be, #eb8934);
 }
 .form-container{
     height: 30vh;
-    width: 45vh;
+    width: 25vw;
     border-radius: 0.5vh;
     display: flex;
     flex-direction: column;
