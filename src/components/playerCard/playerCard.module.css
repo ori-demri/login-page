@@ -7,14 +7,16 @@
   padding: 1rem;
   margin: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 15vw;
+  max-width: 15vw; /* Maximum width */
+  width: 100%; /* Take full width */
 }
 
 .playerImg {
-  width: 12rem;
-  height: 12rem;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  max-width: 10vw; /* Maximum width */
+  width: 100%; /* Take full width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1vh;
 }
 
 .details {
@@ -25,12 +27,13 @@
 
 .countryImg,
 .clubImg {
-  width: 3rem;
-  height: 3rem;
+  width: 100%;
+  max-width: 3vw;
+  height: auto;
   border-radius: 50%;
 }
 
 h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2vw;
 }

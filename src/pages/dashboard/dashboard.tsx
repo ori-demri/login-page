@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import PlayerCard from '../../components/playerCard/playerCard.tsx';
 import styles from './dashboard.module.css';
 
 function Dashboard() {
+  const navigate = useNavigate();
+
   // Mock list of famous football players
   const players = [
     {
@@ -97,14 +100,26 @@ function Dashboard() {
     },
   ];
 
+  const getUsername = (): string => {
+    const username = 'Ori Demri';
+    return ` ${username}`;
+  };
+
+  const logout = () => {
+    navigate('/login');
+  };
+
   return (
     <div className={styles.background}>
-      <header>
-        <h1>Football Dashboard</h1>
-        <button type="button">Logout</button>
-      </header>
       <main>
-        <h2>Famous Football Players</h2>
+        <div className={styles.titleContainer}>
+          <button className={styles.logoutBtn} onClick={logout} type="button">Logout</button>
+          <h1>
+            {' '}
+            Hello
+            {getUsername()}
+          </h1>
+        </div>
         <div className={styles.dashboard}>
           {players.map((player) => (
             <PlayerCard key={player.id} player={player} />
