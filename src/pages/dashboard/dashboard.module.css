@@ -1,0 +1,12 @@
+.background {
+  overflow: hidden;
+  background-color: #eb8934;
+  background-image: linear-gradient(to bottom left, #fa93be, #eb8934);
+  background-attachment: fixed;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
