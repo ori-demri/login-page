@@ -1,0 +1,49 @@
+.background {
+  overflow: hidden;
+  background-color: #eb8934;
+  background-image: linear-gradient(to bottom left, #fa93be, #eb8934);
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+}
+
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.logoutBtn {
+  background-image: linear-gradient(to right, #eb8934 0%, #f076a9 51%, #eb8934 100%);
+  color: white;
+  font-weight: bold;
+  width: 10rem;
+  height: 5.5vh;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 10px black;
+  border-radius: 0.5vh;
+  font-size: 1.9rem;
+  border: 2px solid black;
+  transition: all 0.3s ease-in-out;
+}
+.logoutBtn:hover {
+  background-position: right center;
+  cursor: pointer;
+  transform: scale(1.07);
+}
