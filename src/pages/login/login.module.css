@@ -27,14 +27,14 @@
     background-image: linear-gradient(to right, #eb8934 0%, #f076a9 51%, #eb8934 100%);
     color: white;
     font-weight: bold;
-    width: 20vw;
-    height: 5.5vh;
+    width: 16rem;
+    height: 2rem;
     text-align: center;
     transition: 0.5s;
     background-size: 200% auto;
     box-shadow: 0 0 20px #eee;
     border-radius: 0.5vh;
-    font-size: 2.5vh;
+    font-size: 1.2rem;
     border: none;
     transition: all 0.3s ease-in-out;
 }
@@ -79,7 +79,7 @@ span {
 
 .registerText {
     color: #eb8934;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
     background: none;
     border: none;
